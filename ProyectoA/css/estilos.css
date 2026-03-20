@@ -82,8 +82,23 @@ nav ul{
     text-align: right;/*el elemento ul se desplaza a la derecha*/
 }
 nav ul li{
-    display:inline-block;/*Dejar los elementos de forma horizontal*/
+    /*display:inline-block;/*Dejar los elementos de forma horizontal*/
     width: 130px;/*tamaño definido para todas las opciones (los elementos li)*/
+    /*se agrega el mismo color a todos los elementos de la
+barra de navegación*/
+background-color: #DB9F16;
+}
+/*Para que los elementos ocultos cuando pase el mouse, muestre
+los elementos ul*/
+nav ul li:hover ul{
+display: block;
+}
+/*Para que los subítems queden como lo esperado*/
+nav .navegacion>ul>li{
+/*quiere decir que solo las etiquetas que estan directamente relacionadas
+con la clase navegación y solo las li van a tener dichas propuedades*/
+/*Se agrega el display*/
+display:inline-block;
 }
 /*Para que el elemento <li> complete el contenedor*/
 nav .ingreso ul li{
@@ -115,6 +130,14 @@ Portafolio
 
 /*nivel 1 -primer despliegue*/
 nav li ul{
+    position: absolute;/*Los elemento ul
+mantengan la posición*/
+    display: none;/*se ocultan los elementos del nivel 1*/
+}
+/*Para las subítems de la opción ingreso*/
+nav .ingreso li ul{
+width: 14%;/*Se coloca un ancho al elemento de la clase ingreso
+que sea acorde a lo que se necesita*/
 }
 nav li ul li{
 }
