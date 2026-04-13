@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Chelsea Market', cursive;
+}
+
+body{
+    height:100vh;
+    background:#f4f4f4;
+}
+
+/* CONTENEDOR GENERAL */
+.contenedor{
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+}
+
+/* NAV */
+nav{
+    display:flex;
+    height:60px;
+}
+
+/* LOGO */
+.logo{
+    width:20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#eee;
+}
+
+.logo img{
+    height:40px;
+}
+
+/* MENU */
+.navega{
+    width:60%;
+    background:#DB9F16;
+    display:flex;
+    align-items:center;
+}
+
+.ingreso{
+    width:20%;
+    background:#333;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* MENUS */
+nav ul{
+    list-style:none;
+}
+
+nav ul li{
+    position:relative;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    display:block;
+}
+
+nav ul li:hover{
+    background:rgba(0,0,0,0.3);
+}
+
+nav ul li ul{
+    display:none;
+    position:absolute;
+    background:#333;
+}
+
+nav ul li:hover > ul{
+    display:block;
+}
+
+nav ul li ul li ul{
+    left:100%;
+    top:0;
+}
+
+/* CONTENIDO CENTRAL */
+.contenido{
+    display:flex;
+    flex:1;
+}
+
+/* SIDEBAR */
+aside{
+    width:250px;
+    background:#222;
+    color:white;
+    padding:15px;
+}
+
+/* PERFIL */
+.perfil{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.perfil img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    margin-bottom:10px;
+}
+
+/* MODULOS */
+.modulo{
+    margin-bottom:20px;
+}
+
+.modulo a{
+    display:block;
+    padding:8px;
+    margin:5px 0;
+    background:#333;
+    color:white;
+    text-decoration:none;
+}
+
+.modulo a:hover{
+    background:#555;
+}
+
+/* MAIN */
+main{
+    flex:1;
+    background:white;
+}
+
+main iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+/* FOOTER */
+footer{
+    height:50px;
+    display:flex;
+}
+
+.foot-izq{
+    width:20%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ddd;
+}
+
+.foot-izq a{
+    text-decoration:none;
+    color:#333;
+}
+
+.foot-der{
+    width:80%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-size:12px;
+    background:#ddd;
+}

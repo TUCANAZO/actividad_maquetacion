@@ -32,7 +32,7 @@ margin:auto;
 
 /* BODY */
 body{
-background-image: url('../img/fondo-pagina.jpg'); /* CORREGIDO */
+background-image: url('../si/img/bernabeu.jpg'); /* CORREGIDO */
 background-size: 100% 100%;
 background-attachment: fixed;
 font-family: 'Chelsea Market', cursive;
@@ -136,7 +136,7 @@ top:2px;
 header{
 width: 100%;
 height: 550px;
-background-image: url('../img/fondo-header.jpg'); /* CORREGIDO */
+background-image: url('../si/img/unnamed.webp'); /* CORREGIDO */
 background-size:100% 100%;
 }
 
